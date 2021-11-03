@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+
+<body>
+    <h1>Formulario estructurado</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <br>
+            <input type="text" name="apellidos" id="apellidos">
+            <br>
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Z]">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de conexión</legend>
+            <label for="username">Nombre de usuario</label>
+            <br>
+            <input type="text" name="user" id="username">
+            <br>
+            <label for="password">Contraseña</label>
+            <br>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <label for=" pass2">Repita la contraseña</label>
+            <br>
+            <input type="password" name="password" id="pass2">
+        </fieldset>
+        <input type="submit" value="Enviar datos">
+    </form>
+</body>
+
+</html>
